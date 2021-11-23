@@ -1,0 +1,21 @@
+$tablet-width: 767px;
+$desktop-width: 1023px;
+
+$white: #ffffff;
+$black: #000000;
+$black-special: #1a1a1a;
+$black-light: #202326;
+$gray-dark: #222222;
+$gray: #777777;
+$gray-special: #7f7f7f;
+$gray-ligth: #ededed;
+$gray-special-ligth: #e6e6e6;
+$gray-top: #dcdcdc;
+$gray-50: rgba(#9a9a9a, 0.5);
+$blue: #0062ff;
+
+$border-gray: 2px solid $gray-special;
+$border-ligth: 2px solid $gray-special-ligth;
+$border: 2px solid $gray-top;
+
+$shadow: 0 2px 15px $gray-50;
