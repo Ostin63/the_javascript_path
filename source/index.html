@@ -1,20 +1,116 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Путь javaScript</title>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
   <header class="header">
-
+    <h2 class="visually-hidden">Путь JavaScript</h2>
   </header>
   <main>
-
+    <section class="top">
+      <h1 class="top__title">Путь JavaScript</h1>
+      <div class="top__wrapper-img">
+        <img src="img/footer-img.png" alt="">
+      </div>
+      <p class="top__text">Можно выделить три основных направления для прогресса JavaScript</p>
+    </section>
+    <section class="server">
+      <h2 class="server__title">Серверный JavaScript</h2>
+      <p class="server__text">Разработчики и клиенты часто неправильно понимают, что такое система. Они видят графический интерфейс и думают, что он и есть система. Они определяют систему в терминах графического интерфейса и считают, что должны сразу начать работу с графическим интерфейсом. Они не понимают важнейшего принципа: ввод/вывод не важен.</p>
+      <i>— Р. Мартин</i>
+    </section>
+    <section class="advertising">
+      <h2 class="visually-hidden">Ссылка на рекламу</h2>
+      <div class="advertising__block-text">
+        <p>Реклама на </p>
+        <a href="#">blabla.com</a>
+      </div>
+      <div class="advertising__wrapper-img">
+        <img src="img/advertising-img.jpg" alt="">
+      </div>
+    </section>
+    <section class="conclusioh">
+      <div class="conclusioh__wrapper">
+        <h2 class="conclusion__title">Заключение</h2>
+        <p class="conclusioh__text">Синхрония осознаёт сюжетный верлибр. Мифопорождающее текстовое устройство
+          диссонирует лирический субъект. Абстрактное высказывание пространственно просветляет деструктивный символ.
+          Ямб, несмотря на то, что все эти характерологические черты отсылают не к единому образу нарратора, интегрирует
+          мифопоэтический хронотоп. Действительно, ударение приводит палимпсест. Контрапункт приводит ритм.</p>
+      </div>
+    </section>
+    <form class="form" action="https://echo.htmlacademy.ru/" method="post" enctype="multipart/form-data">
+      <p class="form__rating-text">Оцените статью</p>
+      <div class="form__rating-area">
+        <input type="radio" id="star-5" name="rating" value="5">
+        <label for="star-5" title="Оценка «5»"></label>
+        <input type="radio" id="star-4" name="rating" value="4" checked>
+        <label for="star-4" title="Оценка «4»"></label>
+        <input type="radio" id="star-3" name="rating" value="3">
+        <label for="star-3" title="Оценка «3»"></label>
+        <input type="radio" id="star-2" name="rating" value="2">
+        <label for="star-2" title="Оценка «2»"></label>
+        <input type="radio" id="star-1" name="rating" value="1">
+        <label for="star-1" title="Оценка «1»"></label>
+      </div>
+      <div class="form__wrapper-comments">
+        <p class="form__comments-text">Добавить комментарий к книге</p>
+        <label for="name">
+          <input id="name" type="text" name="name" placeholder="Имя" required>
+        </label>
+        <label for="mail">
+          <input id="mail" type="email" placeholder="E-mail" required>
+        </label>
+        <select name="select" id="select" required>
+          <option value="select" selected>Выберите книгу</option>
+          <option value="val-1">JavaScript ниндзя</option>
+          <option value="val-2">Pragmatic Guide to JavaScript</option>
+          <option value="val-3">Pro JavaScript Techniques</option>
+          <option value="val-4">Выразительный JavaScript</option>
+        </select>
+        <label for="textarea">
+          <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Ваш отзыв"></textarea>
+        </label>
+      </div>
+      <button type="submit">ОТПРАВИТЬ</button>
+    </form>
+    <section class="posts">
+      <h2 class="posts__title">Похожие посты</h2>
+      <ul class="posts__list">
+        <li class="posts__item">
+          <a href="#">
+            <div class="posts__wrapper-img">
+              <img src="img/react.jpg" alt="">
+            </div>
+            <p class="posts__item-text">События жизненного цикла ReactJS</p>
+          </a>
+        </li>
+        <li class="posts__item">
+          <a href="#">
+            <div class="posts__wrapper-img">
+              <img src="img/css.jpg" alt="">
+            </div>
+            <p class="posts__item-text">CSS Grids. Полное руководство</p>
+          </a>
+        </li>
+        <li class="posts__item">
+          <a href="#">
+            <div class="posts__wrapper-img">
+              <img src="img/js.jpg" alt="">
+            </div>
+            <p class="posts__item-text">Асинхронность в JavaScript</p>
+          </a>
+        </li>
+      </ul>
+    </section>
   </main>
-  <footer class="footer">
-    
-  </footer>
+  <footer class="footer"></footer>
 </body>
+
 </html>

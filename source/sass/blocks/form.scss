@@ -1,0 +1,66 @@
+.form__rating-area {
+  width: 164px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+
+  &:not(:checked)>input {
+    display: none;
+  }
+
+  &:not(:checked)>label {
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    cursor: pointer;
+
+    &:before {
+      width: 25px;
+      height: 25px;
+      content: "";
+      display: block;
+      background-image: url("../img/stack.svg#star-hidden");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: contain;
+    }
+  }
+
+  &>input:checked~label {
+    background-image: url("../img/stack.svg#star");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+
+    &::before {
+      background-image: none;
+    }
+  }
+
+  &:not(:checked)>label:hover,
+  &:not(:checked)>label:hover~label {
+    background-image: url("../img/stack.svg#star");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+
+    &::before {
+      background-image: none;
+    }
+  }
+
+  &>input:checked+label:hover,
+  &>input:checked+label:hover~label,
+  &>input:checked~label:hover,
+  &>input:checked~label:hover~label,
+  &>label:hover~input:checked~label {
+    background-image: url("../img/stack.svg#star");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+
+  &>label:active {
+    position: relative;
+  }
+}
