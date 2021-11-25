@@ -7,6 +7,7 @@ $black-special: #1a1a1a;
 $black-light: #202326;
 $gray-dark: #222222;
 $gray: #777777;
+$gray-i:#656565;
 $gray-special: #7f7f7f;
 $gray-ligth: #ededed;
 $gray-special-ligth: #e6e6e6;
@@ -19,3 +20,8 @@ $border-ligth: 2px solid $gray-special-ligth;
 $border: 2px solid $gray-top;
 
 $shadow: 0 2px 15px $gray-50;
+
+$font-opensans: "opensans", serif;
+$font-consolas: "consolas", "Arial", sans-serif;
+$font-helvetica: "helvetica", "Arial", sans-serif;
+$font-arial-mt: "arial-mt", "Arial", sans-serif;

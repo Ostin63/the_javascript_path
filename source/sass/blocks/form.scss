@@ -1,8 +1,28 @@
+.form {
+  width: 100%;
+  padding: 40px 0 29px;
+  display: grid;
+  grid-template-columns: 1fr 770px 1fr;
+  background: $gray-ligth;
+}
+
+.form__rating-text {
+  margin: 0;
+  font-weight: bold;
+  font-family: $font-consolas;
+  font-size: 18px;
+  line-height: 18px;
+  color: $black-light;
+  grid-column: 2 / -2;
+}
+
 .form__rating-area {
   width: 164px;
+  margin-top: 15px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+  grid-column: 2 / -2;
 
   &:not(:checked)>input {
     display: none;
@@ -63,4 +83,83 @@
   &>label:active {
     position: relative;
   }
+}
+
+.form__wrapper-comments {
+  grid-column: 2 / -2;
+
+  input,
+  select {
+    height: 50px;
+    padding: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: $gray-dark;
+  }
+
+  input {
+    width: 100%;
+    padding: 0 15px;
+
+    &::placeholder {
+      color: $gray;
+    }
+  }
+
+  select {
+    width: 290px;
+    margin: 0;
+    padding: 0 25px;
+    background: $white;
+  }
+
+  textarea {
+    width: 770px;
+    margin-top: 20px;
+    padding: 15px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: $gray-dark;
+
+    &::placeholder {
+      color: $gray;
+    }
+  }
+}
+
+.form__block-input {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.form__wrapper-input {
+  width: 210px;
+}
+
+.form__comments-text {
+  margin: 42px 0 32px;
+  font-weight: bold;
+  font-family: $font-consolas;
+  font-size: 18px;
+  line-height: 18px;
+  color: $black-light;
+}
+
+.form__submit {
+  height: 50px;
+  width: 210px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 2px;
+  background: $blue;
+  font-style: italic;
+  font-family: $font-arial-mt;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: $white;
+  grid-column: 2 / -2;
 }

@@ -1,59 +1,69 @@
 @font-face {
-  font-family: "Fira Sans";
+  font-family: "arial-mt";
   src:
-    url("../fonts/Firasansregular.woff2") format("woff2"),
-    url("../fonts/Firasansregular.woff") format("woff");
+    url("../fonts/arial-italic-mt.woff2") format("woff2"),
+    url("../fonts/arial-italic-mt.woff") format("woff");
   font-weight: 400;
-  font-style: normal;
+  font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Fira Sans";
+  font-family: "arial-mt";
   src:
-    url("../fonts/Firasansmedium.woff2") format("woff2"),
-    url("../fonts/Firasansmedium.woff") format("woff");
+    url("../fonts/arial-mt-medium.woff2") format("woff2"),
+    url("../fonts/arial-mt-medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Fira Sans";
+  font-family: "arial-mt";
   src:
-    url("../fonts/Firasanssemibold.woff2") format("woff2"),
-    url("../fonts/Firasanssemibold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
+    url("../fonts/arial-mt-medium-italic.woff2") format("woff2"),
+    url("../fonts/arial-mt-medium-italic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Raleway";
+  font-family: "arial-mt";
   src:
-    url("../fonts/Raleway-bold.woff2") format("woff2"),
-    url("../fonts/Raleway-bold.woff") format("woff");
+    url("../fonts/arial-bold-mt.woff2") format("woff2"),
+    url("../fonts/arial-bold-mt.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Raleway";
+  font-family: "consolas";
   src:
-    url("../fonts/Raleway-ExtraBold.woff2") format("woff2"),
-    url("../fonts/Raleway-ExtraBold.woff") format("woff");
-  font-weight: 800;
+    url("../fonts/consolas-bold.woff2") format("woff2"),
+    url("../fonts/consolas-bold.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Montserrat";
+  font-family: "helvetica";
   src:
-    url("../fonts/Montserrat-Bold.woff2") format("woff2"),
-    url("../fonts/Montserrat-Bold.woff") format("woff");
-  font-weight: 700;
+    url("../fonts/helvetica_regular.woff2") format("woff2"),
+    url("../fonts/helvetica_regular.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "opensans";
+  src:
+    url("../fonts/opensans-Italic.woff2") format("woff2"),
+    url("../fonts/opensans-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
   font-display: swap;
 }

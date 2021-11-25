@@ -1,0 +1,29 @@
+.advertising {
+  width: 100%;
+  padding: 40px 0;
+  display: grid;
+  grid-template-columns: 1fr 770px 1fr;
+  background: $gray-ligth;
+}
+
+.advertising__block-text {
+  width: 152px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-column: 2 / -2;
+
+  p {
+    margin: 0;
+    font-weight: normal;
+    font-family: $font-helvetica;
+    font-size: 14px;
+    line-height: 18px;
+    color: $black;
+  }
+}
+
+.advertising__wrapper-img {
+  margin-top: 20px;
+  grid-column: 2 / -2;
+}

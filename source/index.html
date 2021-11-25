@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body class="body">
   <header class="header">
     <h2 class="visually-hidden">Путь JavaScript</h2>
   </header>
@@ -22,8 +22,11 @@
       <p class="top__text">Можно выделить три основных направления для прогресса JavaScript</p>
     </section>
     <section class="server">
-      <h2 class="server__title">Серверный JavaScript</h2>
-      <p class="server__text">Разработчики и клиенты часто неправильно понимают, что такое система. Они видят графический интерфейс и думают, что он и есть система. Они определяют систему в терминах графического интерфейса и считают, что должны сразу начать работу с графическим интерфейсом. Они не понимают важнейшего принципа: ввод/вывод не важен.</p>
+      <h2 class="server__title">Серверный <span>JavaScript</span></h2>
+      <p class="server__text">Разработчики и клиенты часто неправильно понимают, что такое система. Они видят
+        графический интерфейс и думают, что он и есть система. Они определяют систему в терминах графического интерфейса
+        и считают, что должны сразу начать работу с графическим интерфейсом. Они не понимают важнейшего принципа:
+        ввод/вывод не важен.</p>
       <i>— Р. Мартин</i>
     </section>
     <section class="advertising">
@@ -36,14 +39,12 @@
         <img src="img/advertising-img.jpg" alt="">
       </div>
     </section>
-    <section class="conclusioh">
-      <div class="conclusioh__wrapper">
-        <h2 class="conclusion__title">Заключение</h2>
-        <p class="conclusioh__text">Синхрония осознаёт сюжетный верлибр. Мифопорождающее текстовое устройство
-          диссонирует лирический субъект. Абстрактное высказывание пространственно просветляет деструктивный символ.
-          Ямб, несмотря на то, что все эти характерологические черты отсылают не к единому образу нарратора, интегрирует
-          мифопоэтический хронотоп. Действительно, ударение приводит палимпсест. Контрапункт приводит ритм.</p>
-      </div>
+    <section class="conclusion">
+      <h2 class="conclusion__title">Заключение</h2>
+      <p class="conclusioh__text">Синхрония осознаёт сюжетный верлибр. Мифопорождающее текстовое устройство
+        диссонирует лирический субъект. Абстрактное высказывание пространственно просветляет деструктивный символ.
+        Ямб, несмотря на то, что все эти характерологические черты отсылают не к единому образу нарратора, интегрирует
+        мифопоэтический хронотоп. Действительно, ударение приводит палимпсест. Контрапункт приводит ритм.</p>
     </section>
     <form class="form" action="https://echo.htmlacademy.ru/" method="post" enctype="multipart/form-data">
       <p class="form__rating-text">Оцените статью</p>
@@ -61,24 +62,30 @@
       </div>
       <div class="form__wrapper-comments">
         <p class="form__comments-text">Добавить комментарий к книге</p>
-        <label for="name">
-          <input id="name" type="text" name="name" placeholder="Имя" required>
-        </label>
-        <label for="mail">
-          <input id="mail" type="email" placeholder="E-mail" required>
-        </label>
-        <select name="select" id="select" required>
-          <option value="select" selected>Выберите книгу</option>
-          <option value="val-1">JavaScript ниндзя</option>
-          <option value="val-2">Pragmatic Guide to JavaScript</option>
-          <option value="val-3">Pro JavaScript Techniques</option>
-          <option value="val-4">Выразительный JavaScript</option>
-        </select>
-        <label for="textarea">
-          <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Ваш отзыв"></textarea>
-        </label>
+        <div class="form__block-input">
+          <div class="form__wrapper-input">
+            <label for="name">
+              <input id="name" type="text" name="name" placeholder="Имя" required>
+            </label>
+          </div>
+          <div class="form__wrapper-input">
+            <label for="mail">
+              <input id="mail" type="email" placeholder="E-mail" required>
+            </label>
+          </div>
+          <select name="select" id="select" required>
+            <option value="select" selected>Выберите книгу</option>
+            <option value="val-1">JavaScript ниндзя</option>
+            <option value="val-2">Pragmatic Guide to JavaScript</option>
+            <option value="val-3">Pro JavaScript Techniques</option>
+            <option value="val-4">Выразительный JavaScript</option>
+          </select>
+          <label for="textarea">
+            <textarea name="textarea" id="textarea" cols="30" rows="6" placeholder="Ваш отзыв"></textarea>
+          </label>
+        </div>
       </div>
-      <button type="submit">ОТПРАВИТЬ</button>
+      <button class="form__submit" type="submit">ОТПРАВИТЬ</button>
     </form>
     <section class="posts">
       <h2 class="posts__title">Похожие посты</h2>

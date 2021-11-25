@@ -1,0 +1,27 @@
+.conclusion {
+  width: 100%;
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: 1fr 770px 1fr;
+  background: $white;
+}
+
+.conclusion__title {
+  margin: 0;
+  font-weight: bold;
+  font-family: $font-consolas;
+  font-size: 28px;
+  line-height: 36px;
+  color: $black;
+  grid-column: 2 / -2;
+}
+
+.conclusioh__text {
+  margin: 20px 0 0;
+  font-family: $font-arial-mt;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  color: $black-light;
+  grid-column: 2 / -2;
+}
