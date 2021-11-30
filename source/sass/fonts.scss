@@ -41,6 +41,16 @@
 @font-face {
   font-family: "consolas";
   src:
+    url("../fonts/consolas.woff2") format("woff2"),
+    url("../fonts/consolas.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "consolas";
+  src:
     url("../fonts/consolas-bold.woff2") format("woff2"),
     url("../fonts/consolas-bold.woff") format("woff");
   font-weight: 700;

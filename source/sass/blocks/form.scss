@@ -4,6 +4,10 @@
   display: grid;
   grid-template-columns: 1fr 770px 1fr;
   background: $gray-ligth;
+
+  @media (max-width: $tablet-width) {
+    grid-template-columns: 1fr 280px 1fr;
+  }
 }
 
 .form__rating-text {
@@ -96,6 +100,7 @@
     font-size: 14px;
     line-height: 14px;
     color: $gray-dark;
+    border: $border-ligth;
   }
 
   input {
@@ -105,26 +110,46 @@
     &::placeholder {
       color: $gray;
     }
-  }
 
+    &:focus,
+    &:focus-visible {
+      border-color: $border-gray;
+    }
+  }
+}
+
+.form__block-select {
   select {
     width: 290px;
     margin: 0;
     padding: 0 25px;
     background: $white;
+
+    @media (max-width: $tablet-width) {
+      width: 280px;
+    }
   }
+}
+
+.form__wrapper-textarea {
+  display: block;
 
   textarea {
     width: 770px;
     margin-top: 20px;
-    padding: 15px;
+    padding: 16px;
     font-weight: 500;
     font-size: 14px;
     line-height: 14px;
     color: $gray-dark;
+    border: $border-ligth;
 
     &::placeholder {
       color: $gray;
+    }
+
+    @media (max-width: $tablet-width) {
+      width: 280px;
     }
   }
 }
@@ -137,6 +162,11 @@
 
 .form__wrapper-input {
   width: 210px;
+
+  @media (max-width: $tablet-width) {
+    width: 280px;
+    margin-bottom: 10px;
+  }
 }
 
 .form__comments-text {
@@ -162,4 +192,8 @@
   line-height: 17px;
   color: $white;
   grid-column: 2 / -2;
+
+  @media (max-width: $tablet-width) {
+    width: 280px;
+  }
 }

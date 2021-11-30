@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -46,7 +46,7 @@
         Ямб, несмотря на то, что все эти характерологические черты отсылают не к единому образу нарратора, интегрирует
         мифопоэтический хронотоп. Действительно, ударение приводит палимпсест. Контрапункт приводит ритм.</p>
     </section>
-    <form class="form" action="https://echo.htmlacademy.ru/" method="post" enctype="multipart/form-data">
+    <form class="form" action="https://echo.htmlacademy.ru/" method="post" enctype="multipart/form-data" autocomplete="off">
       <p class="form__rating-text">Оцените статью</p>
       <div class="form__rating-area">
         <input type="radio" id="star-5" name="rating" value="5">
@@ -73,16 +73,19 @@
               <input id="mail" type="email" placeholder="E-mail" required>
             </label>
           </div>
-          <select name="select" id="select" required>
-            <option value="select" selected>Выберите книгу</option>
-            <option value="val-1">JavaScript ниндзя</option>
-            <option value="val-2">Pragmatic Guide to JavaScript</option>
-            <option value="val-3">Pro JavaScript Techniques</option>
-            <option value="val-4">Выразительный JavaScript</option>
-          </select>
-          <label for="textarea">
+          <div class="form__block-select">
+            <select id="select-menu" name="select" required>
+              <option value="select" selected>Выберите книгу</option>
+              <option value="JavaScript ниндзя">JavaScript ниндзя</option>
+              <option value="Pragmatic Guide to JavaScript">Pragmatic Guide to JavaScript</option>
+              <option value="Pro JavaScript Techniques">Pro JavaScript Techniques</option>
+              <option value="Выразительный JavaScript">Выразительный JavaScript</option>
+            </select>
+          </div>
+          <div class="form__wrapper-textarea">
+            <label for="textarea"></label>
             <textarea name="textarea" id="textarea" cols="30" rows="6" placeholder="Ваш отзыв"></textarea>
-          </label>
+          </div>
         </div>
       </div>
       <button class="form__submit" type="submit">ОТПРАВИТЬ</button>
@@ -91,7 +94,7 @@
       <h2 class="posts__title">Похожие посты</h2>
       <ul class="posts__list">
         <li class="posts__item">
-          <a href="#">
+          <a class="posts__item-link" href="#">
             <div class="posts__wrapper-img">
               <img src="img/react.jpg" alt="">
             </div>
@@ -99,7 +102,7 @@
           </a>
         </li>
         <li class="posts__item">
-          <a href="#">
+          <a class="posts__item-link" href="#">
             <div class="posts__wrapper-img">
               <img src="img/css.jpg" alt="">
             </div>
@@ -107,7 +110,7 @@
           </a>
         </li>
         <li class="posts__item">
-          <a href="#">
+          <a class="posts__item-link" href="#">
             <div class="posts__wrapper-img">
               <img src="img/js.jpg" alt="">
             </div>
@@ -118,6 +121,48 @@
     </section>
   </main>
   <footer class="footer"></footer>
+
+  <template id="select-template">
+    <div class="select-template">
+      <label for="select-input"></label>
+      <input type="text" name="select" id="select-input" placeholder="Выберите книгу" required readonly>
+      <ul class="select-template__menu">
+        <li class="select-template__item">
+          <p>JavaScript ниндзя</p>
+        </li>
+        <li class="select-template__item">
+          <p>Pragmatic Guide to JavaScript</p>
+        </li>
+        <li class="select-template__item">
+          <p>Pro JavaScript Techniques</p>
+        </li>
+        <li class="select-template__item">
+          <p>Выразительный JavaScript</p>
+        </li>
+      </ul>
+    </div>
+  </template>
+
+  <div class="alert">
+    <!-- Сообщение об успешном отравке сообщения -->
+    <template id="alert__success">
+      <div class="alert__success">
+        <p class="alert__success-message">Сообщение отправлено</p>
+      </div>
+    </template>
+
+    <template id="alert__error-loading">
+      <!-- Сообщение об ошибке при загрузке -->
+      <div class="alert__error-loading">
+        <p class="alert__error-loading-messege">Произошла ошибка при загрузке данных с сервера :<br>( Обновите
+          страницу!)
+        </p>
+      </div>
+    </template>
+  </div>
+
+  <script src="js/script.min.js"></script>
+
 </body>
 
 </html>

@@ -1,0 +1,23 @@
+.alert__success,
+.alert__error-loading {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  padding-top: 300px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: $bg;
+  z-index: 1100;
+}
+
+.alert__success-message,
+.alert__error-loading-messege {
+  position: relative;
+  color: $black;
+  font-family: $font-arial-mt;
+  font-size: 50px;
+  font-weight: 700;
+}
